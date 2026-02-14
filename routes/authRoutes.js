@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const pool = require("../database"); // make sure this points to your PostgreSQL setup
+const pool = require("../config/database"); // make sure this points to your PostgreSQL setup
 
 // Register new user
 router.post("/register", async (req, res) => {
